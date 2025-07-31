@@ -1,0 +1,132 @@
+:host {
+  --dark-bg: #1a1a1a;
+  --darker-bg: #0f0f0f;
+  --panel-bg: #2a2a2a;
+  --border-color: #404040;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent-green: #4ade80;
+  --accent-red: #ef4444;
+  --accent-blue: #60a5fa;
+  --accent-cyan: #22d3ee;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px;
+  background-color: var(--darker-bg);
+  border-bottom: 1px solid var(--accent-green);
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-green);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--accent-green);
+  }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pro-button {
+  background-color: var(--accent-green);
+  color: var(--darker-bg);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #22c55e;
+  }
+}
+
+.nav-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-icon {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: all 0.2s;
+  position: relative;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.language-icon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.language-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.caret {
+  color: var(--text-primary);
+}
+
+.notification-icon {
+  position: relative;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent-red);
+  border-radius: 50%;
+}
+
+.profile-icon svg {
+  width: 18px;
+  height: 18px;
+}

@@ -1,0 +1,128 @@
+:host {
+  --dark-bg: #1a1a1a;
+  --darker-bg: #0f0f0f;
+  --panel-bg: #2a2a2a;
+  --border-color: #404040;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --accent-green: #4ade80;
+  --accent-red: #ef4444;
+  --accent-blue: #60a5fa;
+  --accent-cyan: #22d3ee;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.left-sidebar {
+  width: 280px;
+  background-color: var(--panel-bg);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.sidebar-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.control-icon {
+  width: 28px;
+  height: 28px;
+  background-color: var(--dark-bg);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  border: 1px solid var(--border-color);
+
+  &:hover {
+    background-color: var(--border-color);
+    color: var(--text-primary);
+  }
+}
+
+.range-tree {
+  flex: 1;
+  padding: 0 20px;
+  overflow-y: auto;
+}
+
+.tree-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  color: var(--text-secondary);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  &.selected {
+    background-color: var(--accent-green);
+    color: var(--darker-bg);
+
+    .folder-icon,
+    .range-icon {
+      color: var(--darker-bg);
+    }
+
+    .tree-chevron {
+      color: var(--darker-bg);
+    }
+  }
+
+  &.expanded .tree-chevron {
+    transform: rotate(180deg);
+  }
+
+  &.collapsed .tree-chevron {
+    transform: rotate(0deg);
+  }
+}
+
+.tree-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.folder-icon {
+  color: var(--accent-green);
+}
+
+.range-icon {
+  color: var(--accent-blue);
+}
+
+.tree-chevron {
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: transform 0.2s;
+}
