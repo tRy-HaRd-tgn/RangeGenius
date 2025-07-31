@@ -25,8 +25,21 @@
   backdrop-filter: blur(50px);
   border-radius: 0px 30px 0px 0px;
 
-}
 
+}
+.left-sidebar-color{
+
+position: absolute;
+bottom: 0;
+left: 0;
+width: 154px;
+height: 250px;
+
+background: #4CFF9D;
+filter: blur(117.95px);
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
 /* Левая узкая панель с иконками */
 .sidebar-icons {
   width: 60px;
