@@ -14,10 +14,15 @@
 
 .left-sidebar {
   width: 280px;
-  background-color: var(--panel-bg);
+
   border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  border: 0.5px solid #0b743a !important;
+
+  border-radius: 0px 30px 0px 0px;
+  border-right: none;
 }
 
 .sidebar-header {

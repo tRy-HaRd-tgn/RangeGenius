@@ -9,15 +9,19 @@
   --accent-red: #ef4444;
   --accent-blue: #60a5fa;
   --accent-cyan: #22d3ee;
+  --light-green-border: #4ade80;
   font-family: 'Montserrat', sans-serif;
 }
 
 .right-panels {
+  margin-left: 10px;
   width: 280px;
   display: flex;
   flex-direction: column;
-  background-color: var(--panel-bg);
-  border-left: 1px solid var(--border-color);
+  background: rgba(27, 27, 27, 0.2);
+  border: 1px solid var(--light-green-border);
+  border-radius: 20px;
+
 }
 
 .panel {
