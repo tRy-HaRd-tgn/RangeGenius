@@ -39,8 +39,8 @@
 }
 
 .control-icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   cursor: pointer;
@@ -108,8 +108,8 @@
   }
 
   &.selected {
-    background-color: var(--accent-green);
-    color: var(--darker-bg);
+    background: #0F3520;
+    color: #14EA75;
     box-shadow: 0 2px 8px rgba(74, 222, 128, 0.3);
 
     .folder-icon,
