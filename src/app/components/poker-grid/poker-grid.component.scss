@@ -24,8 +24,8 @@
 }
 
 .grid-cell {
-  width: 42px;
-  height: 42px;
+  width: 41.4px;
+  height: 41.4px;
   background-color: var(--panel-bg);
   display: flex;
   align-items: center;
@@ -36,9 +36,17 @@
   transition: all 0.2s;
   position: relative;
   overflow: hidden;
-  color: var(--text-primary);
-  border-radius: 2px;
+  color: #121212 !important;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 139%;
+  /* identical to box height, or 25px */
+  letter-spacing: -0.06em;
 
+  color: #121212;
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.05);
