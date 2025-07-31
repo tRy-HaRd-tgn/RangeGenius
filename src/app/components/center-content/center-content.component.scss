@@ -13,7 +13,9 @@
 }
 
 .center-content {
-  width: calc(100vw - 580px);
+  max-width: 606px;
+  max-height: 653px !important;
+  width: calc(100vw - 880px);
   flex: 1;
   display: flex;
   flex-direction: column;

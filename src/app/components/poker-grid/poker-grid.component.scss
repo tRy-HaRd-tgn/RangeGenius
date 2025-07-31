@@ -24,6 +24,8 @@
 }
 
 .grid-cell {
+  width: 42px;
+  height: 42px;
   background-color: var(--panel-bg);
   display: flex;
   align-items: center;
