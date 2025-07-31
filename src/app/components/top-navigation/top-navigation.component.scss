@@ -60,16 +60,20 @@
 }
 
 .pro-button {
+  height: 70%;
   background-color: var(--accent-green);
   color: var(--darker-bg);
   border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: 600;
+
   font-size: 12px;
   cursor: pointer;
   transition: background-color 0.2s;
-
+  background: #00ED6A;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  border-radius: 15px;
   &:hover {
     background-color: #22c55e;
   }
