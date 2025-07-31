@@ -24,158 +24,159 @@
     </div>
 
     <div class="range-tree">
-      <div class="tree-item" [class.expanded]="isFolderExpanded('TestRange1')" (click)="toggleFolder('TestRange1')">
+      <div class="tree-item top" [class.expanded]="isFolderExpanded('TestRange1')" (click)="toggleFolder('TestRange1')">
         <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
+          <img src="/trash.svg" alt="error">
         </div>
-        <span>TestRange1</span>
-        <div class="tree-chevron">
-          <img src="/bird.svg" alt="error">
-        </div>
+        <span  class="span">TestRange1</span>
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder1')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder1')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder1</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder1</span>
       </div>
       <div class="tree-item" style="margin-left: 40px;" *ngIf="isFolderExpanded('TestFolder1')">
         <div class="tree-icon range-icon">
           <img src="/blocks.svg" alt="error">
         </div>
-        <span>HRC-2</span>
+        <span class="span">HRC-2</span>
       </div>
       <div class="tree-item" style="margin-left: 40px;" *ngIf="isFolderExpanded('TestFolder1')">
         <div class="tree-icon range-icon">
           <img src="/blocks.svg" alt="error">
         </div>
-        <span>HRC-2</span>
+        <span class="span">HRC-2</span>
       </div>
       <div class="tree-item" style="margin-left: 40px;" *ngIf="isFolderExpanded('TestFolder1')">
         <div class="tree-icon range-icon">
           <img src="/blocks.svg" alt="error">
         </div>
-        <span>HRC-2</span>
+        <span class="span">HRC-2</span>
       </div>
       <div class="tree-item selected" style="margin-left: 40px;" *ngIf="isFolderExpanded('TestFolder1')">
         <div class="tree-icon range-icon">
          <img src="/choise.svg" alt="error">
         </div>
-        <span>HRC-1</span>
+        <span class="span">HRC-1</span>
       </div>
       <div class="tree-item" style="margin-left: 40px;" *ngIf="isFolderExpanded('TestFolder1')">
         <div class="tree-icon range-icon">
           <img src="/blocks.svg" alt="error">
         </div>
-        <span>HRC-2</span>
+        <span class="span">HRC-2</span>
       </div>
       <div class="tree-item" style="margin-left: 40px;" *ngIf="isFolderExpanded('TestFolder1')">
         <div class="tree-icon range-icon">
           <img src="/blocks.svg" alt="error">
         </div>
-        <span>HRC-2</span>
+        <span class="span">HRC-2</span>
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder2')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder2')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder2</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder2</span>
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder3')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder3')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder3</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder3</span>
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder4')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder4')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder4</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder4</span>
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder5')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder5')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder5</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder5</span>
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder6')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder6')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder6</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder6</span>
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder7')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder7')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder7</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder7</span>
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder8')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder8')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder8</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder8</span>
+
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder9')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder9')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder9</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder9</span>
+
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder10')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder10')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder10</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder10</span>
+
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder11')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder11')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder11</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder11</span>
+
       </div>
       <div class="tree-item" [class.expanded]="isFolderExpanded('TestFolder12')" style="margin-left: 20px;" (click)="toggleFolder('TestFolder12')">
-        <div class="tree-icon folder-icon">
-          <img src="/file.svg" alt="error">
-        </div>
-        <span>TestFolder12</span>
         <div class="tree-chevron">
           <img src="/bird.svg" alt="error">
         </div>
+        <div class="tree-icon folder-icon">
+          <img src="/file.svg" alt="error">
+        </div>
+        <span class="span">TestFolder12</span>
       </div>
     </div>
   </div>
