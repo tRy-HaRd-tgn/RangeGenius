@@ -51,7 +51,7 @@
 .range-list {
   display: flex;
   flex-direction: column;
-  height: 60%;
+
   gap: 8px;
 }
 
@@ -152,7 +152,7 @@
   justify-content: center;
   width: 28px;
   height: 28px;
-  background-color: var(--accent-green);
+
   border-radius: 50%;
   cursor: pointer;
   margin-top: 10px;
@@ -160,7 +160,7 @@
   transition: all 0.2s;
   font-size: 18px;
   font-weight: bold;
-
+  margin-left: auto;
   &:hover {
     background-color: #22c55e;
     transform: scale(1.05);
