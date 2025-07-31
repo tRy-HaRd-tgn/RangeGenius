@@ -17,7 +17,7 @@
 .right-panels {
   margin-left: 10px;
   min-width: 762px;
-
+  position: relative;
   display: flex;
   height:501px;
   background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
@@ -118,7 +118,12 @@
   padding: 2px 0;
   outline: none;
   transition: border-color 0.2s;
-
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
   &:focus {
     border-bottom-color: var(--accent-green);
   }
@@ -167,6 +172,21 @@
   }
 }
 
+.cross{
+  margin-left: 0px;
+  transform: translateX(-7px);
+  cursor: pointer;
+}
+.right-panels-color{
+  position: absolute;
+  bottom: 35%;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: #4CFF9D;
+  filter: blur(117.95px);
+}
+
 .import-button {
   display: flex;
   align-items: center;
@@ -186,7 +206,7 @@
   letter-spacing: -0.06em;
   color: #FFFFFF;
   transition: all 0.2s;
-  margin-top: 145px;
+  margin-top: 115px;
   &:hover {
     background-color: var(--border-color);
     border-color: var(--accent-green);
