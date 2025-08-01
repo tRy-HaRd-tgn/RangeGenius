@@ -227,3 +227,12 @@
   color: var(--text-secondary);
   margin-right: 10px;
 }
+@media (max-width: 1900px) {
+  .right-panels{
+    min-width: 0px !important;
+    width: 100% !important;
+    flex-direction: column;
+    height: auto !important;
+  }
+
+}
