@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './top-navigation.component.html',
   styleUrls: ['./top-navigation.component.scss']
 })
-export class TopNavigationComponent {}
+export class TopNavigationComponent {
+  isMenuOpen = false;
+
+  /**
+   * Переключает состояние burger-меню
+   */
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+}

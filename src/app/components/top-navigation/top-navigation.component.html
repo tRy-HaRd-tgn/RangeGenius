@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <div class="top-nav">
   <div class="logo">Range Genius</div>
-  <div class="nav-left">
 
+  <!-- Burger menu button -->
+  <button
+    class="burger-menu"
+    (click)="toggleMenu()"
+    [class.active]="isMenuOpen"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-left" [class.menu-open]="isMenuOpen">
     <nav class="nav-menu">
       <a href="#" class="nav-item">Редактор диапазонов</a>
       <a href="#" class="nav-item">Тренажер диапазонов</a>
@@ -13,17 +24,15 @@
   </div>
   <button class="pro-button">PRO</button>
   <div class="nav-right">
-
     <div class="nav-icons">
       <div class="nav-icon language-icon">
-
-        <img class="caret" width="8" height="8" src="/F.svg" alt="error">
+        <img class="caret" width="8" height="8" src="/F.svg" alt="error" />
       </div>
       <div class="nav-icon notification-icon">
-        <img class="caret" width="8" height="8" src="/S.svg" alt="error">
+        <img class="caret" width="8" height="8" src="/S.svg" alt="error" />
       </div>
       <div class="nav-icon profile-icon">
-        <img class="caret" width="8" height="8" src="/T.svg" alt="error">
+        <img class="caret" width="8" height="8" src="/T.svg" alt="error" />
       </div>
     </div>
   </div>
