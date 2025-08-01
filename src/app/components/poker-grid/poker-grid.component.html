@@ -6,7 +6,14 @@
     class="grid-cell"
     [style.background]="getGradientStyle(handData.hand)"
     (click)="onCellClick(handData.hand, $event)"
-    [title]="handData.hand + ': ' + handData.redPercent + '% красный, ' + handData.bluePercent + '% синий'"
+    [title]="
+      handData.hand +
+      ': ' +
+      handData.redPercent +
+      '% красный, ' +
+      handData.bluePercent +
+      '% синий'
+    "
   >
     {{ handData.hand }}
   </div>
