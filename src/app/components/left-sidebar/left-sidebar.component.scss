@@ -232,3 +232,22 @@ margin-right: 15px;
 .range-tree::-webkit-scrollbar-thumb:hover {
   background: var(--sidebar-green-dark);
 }
+@media (max-width: 1480px) {
+  .sidebar-icons{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  .sidebar-header{
+    margin-top: 80px;
+  }
+  .left-sidebar{
+    width: 20vw;
+  }
+  .sidebar-content{
+    width: 100%;
+  }
+  .range-tree{
+    width: 100%;
+  }
+}
